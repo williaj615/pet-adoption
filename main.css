@@ -1,3 +1,34 @@
 body {
     background-color: cornflowerblue;
 }
+/**#pets 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+    justify-content: space-evenly;
+  }**/
+  
+#card-container {
+      display: flex;
+      width: 75%;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      border: solid 1px red;
+  }
+
+.card {
+   
+    width:;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+    border: solid 1px whitesmoke;
+    
+  }
+  
+.card img {
+    height: 100px;
+    width: 200px;
+  }
