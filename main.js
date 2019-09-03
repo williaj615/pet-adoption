@@ -44,13 +44,13 @@ const printPets = (petArr) => {
          domString += `
         <div class="card">
             <h2>${pet.Name}</h2>
-            <img src=${pet.Image} alt='Image of ${pet.Name}'
+            <p><img src=${pet.Image} alt='Image of ${pet.Name}'</p>
             <p>${pet.Color}</p>
             <p>${pet.Name} is great at ${pet.SpecialSkill}!</p>
-            <p>${pet.TypeOfPet}</p?
+            <p>${pet.TypeOfPet}</p>
         </div>`
     }
-    printToDom(domString, 'card-container')
+    printToDom(domString, 'pet-container')
 }   
 
 printPets(availablePets);
