@@ -53,4 +53,25 @@ const printPets = (petArr) => {
     printToDom(domString, 'pet-container')
 }   
 
-printPets(availablePets);
+const buttonClick = (e) => {
+    //figure out which type of pet for the button we clicked
+    const petType = e.target.id
+    const selectedPets = []
+    //then figure out how to only get those pets from list of all pets
+    for (let i = 0; i < availablePets.length; i++) {
+        const pet = availablePets[i]
+        if (pet.TypeOfPet === petType) {
+            selectedPets.push(pet)
+        }
+    }
+    //then pass short list of pets to printPets
+    printPets(selectedPets);
+}
+
+document.getElementById('Dog').addEventListener('click', buttonClick)
+
+document.getElementById('Cat').addEventListener('click', buttonClick)
+
+document.getElementById('Ferret').addEventListener('click', buttonClick)
+
+//printPets(availablePets);
