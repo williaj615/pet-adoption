@@ -1,25 +1,83 @@
 body {
     background-color: cornflowerblue;
+    font-family: 'PT Sans', sans-serif;
 }
-  
+#button-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.button {
+  margin: 1em;
+}
+
 #pet-container {
   margin-top: 1em;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around; }
+  justify-content: space-evenly; }
 
 .card {
   display: flex;
   flex-direction: column;
   width: 200px;
-  margin-bottom: 1em;
-  
+  margin-bottom: 1em;;
+  background-color: white;;
   text-align: center;
-  border: solid 1px whitesmoke;
+  border: solid 1px grey;
+  border-radius: 5px;
+
     
   }
-  
+.name {}
+.Dog { border: solid 1px darkgrey;
+  color: white;
+background-color: darkcyan;
+margin: 0 auto;
+}
+.Cat { border: solid 1px darkgrey;
+  color: white;
+background-color: darkolivegreen;
+margin: 0 auto;}
+
+.Ferret { border: solid 1px darkgrey;
+  color: white;
+background-color: darkgoldenrod;
+margin: 0 auto;}
+
+.card p {margin: .25em;}
 .card img {
-    height: 50px;
-    width: 100px;
+    height: 100px;
+    width: 150px;
+    border: solid 1px grey;
+    border-radius: 5px;
   }
+
+#All {
+  color: white;
+background-color: grey;
+border: solid 1px white;
+border-radius: 25px;
+}
+
+#Dog {
+  color: white;
+background-color: darkcyan;
+border: solid 1px white;
+border-radius: 25px;
+}
+
+#Cat {
+  color: white;
+background-color: darkolivegreen; 
+border: solid 1px white;
+border-radius: 25px;
+}
+
+#Ferret {
+  color: white;
+background-color: darkgoldenrod;
+border: solid 1px white;
+border-radius: 25px;
+}

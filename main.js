@@ -43,11 +43,11 @@ const printPets = (petArr) => {
         const pet = petArr[i];
          domString += `
         <div class="card">
-            <h2>${pet.Name}</h2>
+            <h2 class="name">${pet.Name}</h2>
             <p><img src=${pet.Image} alt='Image of ${pet.Name}'</p>
             <p>${pet.Color}</p>
             <p>${pet.Name} is great at ${pet.SpecialSkill}!</p>
-            <p>${pet.TypeOfPet}</p>
+            <p class="${pet.TypeOfPet}">${pet.TypeOfPet}</p>
         </div>`
     }
     printToDom(domString, 'pet-container')
@@ -63,9 +63,14 @@ const buttonClick = (e) => {
         if (pet.TypeOfPet === petType) {
             selectedPets.push(pet)
         }
-    }
+    } 
+    if (petType === 'All') {
+        printPets(availablePets);
+      } else {
+        printPets(selectedPets);;
+      }
     //then pass short list of pets to printPets
-    printPets(selectedPets);
+
 }
 
 document.getElementById('Dog').addEventListener('click', buttonClick)
@@ -73,5 +78,7 @@ document.getElementById('Dog').addEventListener('click', buttonClick)
 document.getElementById('Cat').addEventListener('click', buttonClick)
 
 document.getElementById('Ferret').addEventListener('click', buttonClick)
+
+document.getElementById('All').addEventListener('click', buttonClick)
 
 //printPets(availablePets);
