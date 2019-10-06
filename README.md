@@ -4,7 +4,7 @@
 Run this application to view pets available for adoption. Use the buttons to sort pet by type.
 
 ## Screenshots
-![Product Cards Preview](screenshots/main_view.png
+![Product Cards Preview](https://raw.githubusercontent.com/williaj615/pet-adoption/master/screenshots/main_view.png
 )
 
 ## How to run
