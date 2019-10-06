@@ -53,6 +53,8 @@ const printPets = (petArr) => {
     printToDom(domString, 'pet-container')
 }   
 
+printPets(availablePets);
+
 const buttonClick = (e) => {
     //figure out which type of pet for the button we clicked
     const petType = e.target.id
@@ -81,4 +83,4 @@ document.getElementById('Ferret').addEventListener('click', buttonClick)
 
 document.getElementById('All').addEventListener('click', buttonClick)
 
-//printPets(availablePets);
+
